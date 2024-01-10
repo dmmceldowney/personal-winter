@@ -1,0 +1,35 @@
+        <footer class="footer has-text-centered">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8-desktop is-offset-2-desktop">
+                        <p style="margin-top: 1rem;">
+                            <a href="https://linkedin.com/in/dmmceldowney">
+                                <img src="resources/images/LI-Logo.png" width="100" alt="Linked In">
+                            </a>
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            <a href="http://bulma.io">
+                                <img src="resources/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <script src="{{ [
+            '@jquery',
+            '@framework',
+            '@framework.extras',
+
+            'assets/js/app.js',
+        ] | theme }}"></script>
+        {% scripts %}
+
+        {% flash %}
+            <p data-control="flash-message" data-interval="7" class="flashmessage {{ type }}">
+                {{ message }}
+            </p>
+        {% endflash %}
+    </body>
+</html>
